@@ -4,7 +4,7 @@ const Students = () => {
 	return (
 		<>
 			<Link href='/'>
-				<div className=''>Main</div>
+				<div className=''>Profile</div>
 			</Link>
 		</>
 	)
