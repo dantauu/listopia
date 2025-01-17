@@ -1,11 +1,12 @@
-import Link from "next/link";
+import LeftMenu from "@/intities/ui/leftMenu/LeftMenu";
+
 
 export default function Page() {
   return (
 		<>
-			<Link href='/ui/students'>
-				<div className=''>Students</div>
-			</Link>
+			<div className="main__wrapper">
+				<LeftMenu />
+			</div>
 		</>
 	)
 }
