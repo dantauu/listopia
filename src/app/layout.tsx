@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "./styles/globals.scss";
 import LeftMenu from "@/intities/ui/left-menu/left-menu";
+import '../app/styles/globals.scss'
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",

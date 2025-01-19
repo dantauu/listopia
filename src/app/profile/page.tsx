@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Students = () => {
+const Profile = () => {
 	return (
 		<>
 			<Link href='/'>
@@ -9,4 +9,4 @@ const Students = () => {
 		</>
 	)
 }
-export default Students
+export default Profile

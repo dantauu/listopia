@@ -1,0 +1,24 @@
+// Mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin reset-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body.dark {
+   --border-color: #ff0000;
+}
+

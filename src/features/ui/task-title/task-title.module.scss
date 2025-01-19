@@ -1,0 +1,15 @@
+@import '../../../app//styles/variables.scss';
+
+.colorTask {
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 0, 0);
+}
+
+// .colorTaskText {
+//     color: red;
+// }
+
+.titleTaskWrapper {
+    @include flex-center;
+}
