@@ -3,7 +3,8 @@
 .colorTask {
     width: 10px;
     height: 10px;
-    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.741);
 }
 
 // .colorTaskText {
@@ -12,4 +13,5 @@
 
 .titleTaskWrapper {
     @include flex-center;
+    gap: 7px;
 }
