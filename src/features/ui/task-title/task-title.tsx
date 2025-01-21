@@ -7,7 +7,7 @@ const TaskTitle = () => {
 				<div className={style.wrapperTitleTask}>
 					<div className='title__task-item'>
 						<AddTaskBtn
-							addTaskColor={style.colorTask}
+							addTaskColor={style.colorTaskRed}
 							addTaskText='Личные желания'
 							addTaskTextClass={style.colorTaskText}
 							addTaskWrapper={style.titleTaskWrapper}
@@ -15,7 +15,7 @@ const TaskTitle = () => {
 					</div>
 					<div className='title__task-item'>
 						<AddTaskBtn
-							addTaskColor={style.colorTask}
+							addTaskColor={style.colorTaskGreen}
 							addTaskText='Необходимые'
 							addTaskTextClass={style.colorTaskText}
 							addTaskWrapper={style.titleTaskWrapper}
@@ -23,7 +23,7 @@ const TaskTitle = () => {
 					</div>
 					<div className='title__task-item'>
 						<AddTaskBtn
-							addTaskColor={style.colorTask}
+							addTaskColor={style.colorTaskBlue}
 							addTaskText='Подарки'
 							addTaskTextClass={style.colorTaskText}
 							addTaskWrapper={style.titleTaskWrapper}
