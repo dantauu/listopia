@@ -21,6 +21,15 @@ a {
   padding: 120px;
 }
 
+// FONTS
+
+@font-face {
+  font-family: 'Montserrat-B';
+  src: url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 // root Light Theme
 :root {
   --border-color: #e5e5e5;
