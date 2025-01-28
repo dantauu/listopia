@@ -30,6 +30,13 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montserrat-M';
+  src: url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 // root Light Theme
 :root {
   --border-color: #e5e5e5;
