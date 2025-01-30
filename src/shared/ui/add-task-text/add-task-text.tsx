@@ -1,7 +1,7 @@
 import addTaskBtnProps from "@/app/types/global"
 
 
-const AddTaskBtn = ({
+const AddTaskText = ({
 	addTaskColor,
 	addTaskText,
 	addTaskTextClass,
@@ -19,4 +19,4 @@ const AddTaskBtn = ({
 	)
 }
 
-export default AddTaskBtn
+export default AddTaskText

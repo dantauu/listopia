@@ -21,16 +21,38 @@
     background: rgba(1, 111, 207, 0.741);
 }
 
-// .colorTaskText {
-//     color: red;
-// }
-
 .wrapperTitleTask {
     @include flex-center;
-    gap: 20px
+    gap: 120px;
 }
 
 .titleTaskWrapper {
     @include flex-center;
     gap: 7px;
+}
+
+.titleTaskItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.taskTextCount {
+    display: flex;
+    gap: 40px
+}
+
+.titleTaskCount {
+    @include flex-center;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.colorTaskText {
+    font-family: 'Montserrat-M';
+    width: 154px;
+    background: #3e69f8;
 }

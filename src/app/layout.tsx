@@ -18,8 +18,12 @@ export default function RootLayout({ children }: Readonly<{
   return (
 		<html lang='ru'>
 			<body className={`${geistSans.variable}`}>
-        <LeftMenu />
-				{children}
+				<div className='wrapper__flex'>
+					<div className=''>
+						<LeftMenu />
+					</div>
+					<div className=''>{children}</div>
+				</div>
 			</body>
 		</html>
 	)
