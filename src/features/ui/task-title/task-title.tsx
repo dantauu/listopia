@@ -1,6 +1,6 @@
 import AddTaskText from '@/shared/ui/add-task-text/add-task-text'
 import style from './task-title.module.scss'
-import AddTaskBtn from '@/shared/ui/add-task-btn/add-task-btn'
+import Button from '@/shared/ui/button/button'
 
 const TaskTitle = () => {
     return (
@@ -15,11 +15,17 @@ const TaskTitle = () => {
 								addTaskWrapper={style.titleTaskWrapper}
 							/>
 							<div className={style.titleTaskCount}>
-								<p>0</p>
+								<p className={style.count}>0</p>
 							</div>
 						</div>
 						<div className=''>
-							<AddTaskBtn />
+							<Button
+								wrapperBtn={style.wrapperBtnClass}
+								imgClass={style.btnImgClass}
+								btnImg='assets/img/plus.svg'
+								btnClass={style.btnTextClass}
+								btnText='Добавить'
+							/>
 						</div>
 					</div>
 					<div className={style.titleTaskItem}>
@@ -31,11 +37,17 @@ const TaskTitle = () => {
 								addTaskWrapper={style.titleTaskWrapper}
 							/>
 							<div className={style.titleTaskCount}>
-								<p>0</p>
+								<p className={style.count}>0</p>
 							</div>
 						</div>
 						<div className=''>
-							<AddTaskBtn />
+							<Button
+								wrapperBtn={style.wrapperBtnClass}
+								imgClass={style.btnImgClass}
+								btnImg='assets/img/plus.svg'
+								btnClass={style.btnTextClass}
+								btnText='Добавить'
+							/>
 						</div>
 					</div>
 					<div className={style.titleTaskItem}>
@@ -47,11 +59,17 @@ const TaskTitle = () => {
 								addTaskWrapper={style.titleTaskWrapper}
 							/>
 							<div className={style.titleTaskCount}>
-								<p>0</p>
+								<p className={style.count}>0</p>
 							</div>
 						</div>
 						<div className=''>
-							<AddTaskBtn />
+							<Button
+								wrapperBtn={style.wrapperBtnClass}
+								imgClass={style.btnImgClass}
+								btnImg='assets/img/plus.svg'
+								btnClass={style.btnTextClass}
+								btnText='Добавить'
+							/>
 						</div>
 					</div>
 				</div>

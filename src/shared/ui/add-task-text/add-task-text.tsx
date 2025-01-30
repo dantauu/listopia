@@ -1,4 +1,4 @@
-import addTaskBtnProps from "@/app/types/global"
+import { addTaskBtnProps } from "@/app/types/global"
 
 
 const AddTaskText = ({

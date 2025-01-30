@@ -1,16 +1,16 @@
+import { ButtonProps } from '@/app/types/global'
 
-const Button = ({ BtnClass, BtnText, BtnImg, WrapperBtn }) => {
+const Button = ({ imgClass, btnText, btnImg, wrapperBtn, btnClass }: ButtonProps) => {
 	return (
-		<div className={WrapperBtn}>
+		<div className={wrapperBtn}>
 			<div className=''>
-				<img className={BtnClass} src={BtnImg} alt='' />
+				<img className={imgClass} src={btnImg} alt='' />
 			</div>
 			<div className=''>
-				<button className=''>{BtnText}</button>
+				<button className={btnClass}>{btnText}</button>
 			</div>
 		</div>
 	)
 }
 
 export default Button
-///assets/img/plus.svg

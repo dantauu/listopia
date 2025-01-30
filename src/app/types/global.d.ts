@@ -6,4 +6,12 @@ type addTaskBtnProps = {
 	addTaskWrapper: string
 }
 
-export default addTaskBtnProps
+type ButtonProps = {
+	imgClass?: string
+	btnText: string
+	btnImg?: string
+	wrapperBtn: string
+	btnClass: string
+}
+
+export { addTaskBtnProps, ButtonProps }
