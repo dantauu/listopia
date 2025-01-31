@@ -12,6 +12,13 @@ type ButtonProps = {
 	btnImg?: string
 	wrapperBtn: string
 	btnClass: string
+	onClick?: () => void
 }
 
-export { addTaskBtnProps, ButtonProps }
+type ModalProps = {
+	openModal: boolean
+	setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+
+export { addTaskBtnProps, ButtonProps, ModalProps }

@@ -1,8 +1,8 @@
 import { ButtonProps } from '@/app/types/global'
 
-const Button = ({ imgClass, btnText, btnImg, wrapperBtn, btnClass }: ButtonProps) => {
+const Button = ({ imgClass, btnText, btnImg, wrapperBtn, btnClass, onClick }: ButtonProps) => {
 	return (
-		<div className={wrapperBtn}>
+		<div onClick={onClick} className={wrapperBtn}>
 			<div className=''>
 				<img className={imgClass} src={btnImg} alt='' />
 			</div>
