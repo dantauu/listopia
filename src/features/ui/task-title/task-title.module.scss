@@ -22,8 +22,9 @@
 }
 
 .wrapperTitleTask {
-    @include flex-center;
-    gap: 120px;
+    display: flex;
+    align-items: center;
+    gap: 140px;
 }
 
 .titleTaskWrapper {
@@ -33,6 +34,7 @@
 
 .titleTaskItem {
     @include flex-column;
+    gap: 40px;
 }
 
 .taskTextCount {
@@ -59,7 +61,7 @@
     @include flex-center;
     border: 1px solid var(--border-color);
     border-radius: 10px;
-    width: 200px;
+    width: 235px;
     height: 45px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

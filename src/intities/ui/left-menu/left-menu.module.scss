@@ -19,12 +19,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 18%;
     padding: 8px 10px 0 13px;
     border-top: 2px solid var(--border-color);
     border-right: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
-    box-shadow: 0 0 28px var(--shadow-color);
+    // box-shadow: 0 0 28px var(--shadow-color);
     border-radius: 10px;
-    // height: 98%;
+    top: 34%;
+    bottom: 51%;
+    height: max-content;
 }
