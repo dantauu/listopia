@@ -14,14 +14,56 @@
 .wrapperModal {
     @include flex-column;
     position: fixed;
-    width: 415px;
-    height: 365px;
-    background: #0000000f;
+    width: 600px;
+    height: 415px;
+    background: rgb(32 32 32 / 88%);
     border: 3px solid var(--border-modal-color);
     border-radius: 20px;
 }
 
+.wrapperInputBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
 .modalButton {
     @include reset-button;
+    color: #fff;
+    background: #bac9fb;
+    width: 227px;
+    height: 59px;
+    border-radius: 15px;
+    font-family: 'Fira';
+    font-size: 17px;
+}
+
+.modalAddBtn {
+    @include reset-button;
+    color: #fff;
+    background: #030307;
+    width: 140px;
+    height: 44px;
+    border-radius: 15px;
+    font-family: 'Fira';
+    margin-top: 55px;
+}
+
+.inputItem {
+    width: 300px;
+    border: none;
+    height: 60px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 15px;
+    background: #bac9fb;
+    padding: 0 0 0 14px;
+    color: #fff;
+}
+
+.inputItem::placeholder {
+    font-family: 'Fira';
+    font-size: 17px;
     color: #fff;
 }

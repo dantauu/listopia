@@ -15,14 +15,20 @@ const ModalAddTask = () => {
 						<button className={style.modalButton}>Добавить изображение</button>
 					</div>
 					<div className=''>
-						<input type='text' placeholder='Название покупки' />
+						<input 
+							className={style.inputItem} 
+							type='text'
+							placeholder='Название покупки' />
 					</div>
 					<div className=''>
-						<input type='text' placeholder='Описание покупки' />
+						<input 
+							type='text'
+							placeholder='Описание покупки'
+							className={style.inputItem} />
 					</div>
 				</div>
-                <div className="">
-                    <button>Добавить покупку</button>
+                <div className=''>
+                    <button className={style.modalAddBtn}>Добавить покупку</button>
                 </div>
 			</div>
 			</div>
