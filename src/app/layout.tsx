@@ -5,7 +5,7 @@ import LeftMenu from "@/intities/ui/left-menu/left-menu";
 import React, { createContext, useState } from "react";
 import { ModalProps } from "./types/global";
 import '../app/styles/globals.scss'
-import Modal from "@/shared/ui/modal/modal";
+import ModalAddTask from "@/shared/ui/modal-add-task/modal-add-task";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: Readonly<{
 						</div>
 						<div className=''>{children}</div>
 					</div>
-						<Modal />
+						<ModalAddTask />
 				</ContextModal.Provider>
 			</body>
 		</html>

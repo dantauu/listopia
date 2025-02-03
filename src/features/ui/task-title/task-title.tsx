@@ -52,6 +52,7 @@ const TaskTitle = () => {
 								btnImg='assets/img/plus.svg'
 								btnClass={style.btnTextClass}
 								btnText='Добавить'
+								onClick={() => setOpenModal(true)}
 							/>
 						</div>
 					</div>
@@ -74,6 +75,7 @@ const TaskTitle = () => {
 								btnImg='assets/img/plus.svg'
 								btnClass={style.btnTextClass}
 								btnText='Добавить'
+								onClick={() => setOpenModal(true)}
 							/>
 						</div>
 					</div>

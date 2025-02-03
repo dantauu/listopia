@@ -1,16 +1,18 @@
 import { ContextModal } from "@/app/layout"
 import { useContext } from "react"
+import style from './modal-task.module.scss'
 
 
-const Modal = () => {
+const ModalAddTask = () => {
 	const { openModal } = useContext(ContextModal)
     return (
 		<>
 		{openModal && (
-			<div className='wrapper-modal'>
-				<div className=''>
+			<div className={style.fullWrapperModal}>
+			<div className={style.wrapperModal}>
+				<div className={style.wrapperInputBtn}>
 					<div className=''>
-						<button>Добавить изображение</button>
+						<button className={style.modalButton}>Добавить изображение</button>
 					</div>
 					<div className=''>
 						<input type='text' placeholder='Название покупки' />
@@ -23,9 +25,10 @@ const Modal = () => {
                     <button>Добавить покупку</button>
                 </div>
 			</div>
+			</div>
 		)}
 		</>
 		)
 }
 
-export default Modal
+export default ModalAddTask
