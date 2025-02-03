@@ -1,7 +1,12 @@
+import { ContextModal } from "@/app/layout"
+import { useContext } from "react"
 
 
 const Modal = () => {
+	const { openModal } = useContext(ContextModal)
     return (
+		<>
+		{openModal && (
 			<div className='wrapper-modal'>
 				<div className=''>
 					<div className=''>
@@ -18,5 +23,9 @@ const Modal = () => {
                     <button>Добавить покупку</button>
                 </div>
 			</div>
+		)}
+		</>
 		)
 }
+
+export default Modal
