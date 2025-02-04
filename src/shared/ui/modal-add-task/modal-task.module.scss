@@ -13,12 +13,13 @@
 
 .wrapperModal {
     @include flex-column;
-    position: fixed;
+    position: relative;
     width: 600px;
-    height: 415px;
+    height: 435px;
     background: rgb(32 32 32 / 88%);
     border: 3px solid var(--border-modal-color);
     border-radius: 20px;
+    z-index: 10;
 }
 
 .wrapperInputBtn {
@@ -31,10 +32,6 @@
 .modalButton {
     @include reset-button;
     color: #fff;
-    background: #bac9fb;
-    width: 227px;
-    height: 59px;
-    border-radius: 15px;
     font-family: 'Fira';
     font-size: 17px;
 }
@@ -47,17 +44,17 @@
     height: 44px;
     border-radius: 15px;
     font-family: 'Fira';
-    margin-top: 55px;
+    margin-top: 33px;
 }
 
 .inputItem {
-    width: 300px;
+    width: 410px;
     border: none;
-    height: 60px;
+    height: 70px;
     outline: none;
     font-size: 17px;
     border-radius: 15px;
-    background: #bac9fb;
+    background: #98b0ff;
     padding: 0 0 0 14px;
     color: #fff;
 }
@@ -67,3 +64,31 @@
     font-size: 17px;
     color: #fff;
 }
+
+.addBtnImg {
+    @include flex-center;
+    cursor: pointer;
+    background: #000;
+    width: 235px;
+    height: 59px;
+    border-radius: 15px;
+    gap: 5px;
+}
+
+.modalImg {
+    padding-top: 5px;
+    width: 30px;
+}
+
+.wrapperKrestModal {
+    position: absolute;
+    cursor: pointer;
+    top: 3px;
+    right: 3px;
+}
+
+.krestIcon {
+    width: 70px;
+    transform: rotate(45deg);
+}
+

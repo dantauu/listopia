@@ -2,10 +2,12 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import LeftMenu from "@/intities/ui/left-menu/left-menu";
-import React, { createContext, useState } from "react";
+import React, { createContext, useRef, useState } from "react";
 import { ModalProps } from "./types/global";
-import '../app/styles/globals.scss'
 import ModalAddTask from "@/shared/ui/modal-add-task/modal-add-task";
+import Head from "next/head";
+import '../app/styles/globals.scss'
+
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -24,11 +26,15 @@ const modalContextProps: ModalProps = {
 
 export const ContextModal = createContext(modalContextProps)
 
-export default function RootLayout({ children }: Readonly<{
-  children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{children: React.ReactNode }>) {
 	const [openModal, setOpenModal] = useState<boolean>(false)
+	const modalAddRef = useRef(null)
   return (
 		<html lang='ru'>
+			<Head>
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
+				<title>SSSSS</title>
+			</Head>
 			<body className={`${geistSans.variable}`}>
 				<ContextModal.Provider value={{ openModal, setOpenModal }}>
 					<div className='wrapper__flex'>
