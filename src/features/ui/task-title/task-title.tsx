@@ -4,11 +4,13 @@ import style from './task-title.module.scss'
 import Button from '@/shared/ui/button/button'
 import { useContext } from 'react'
 import { ContextModal } from '@/app/layout'
+import CheckSwitch from '@/shared/ui/check-switch/check-switch'
 
 const TaskTitle = () => {
 	const { setOpenModal } = useContext(ContextModal)
     return (
 			<div className='container'>
+				<CheckSwitch />
 				<div className={style.wrapperTitleTask}>
 					<div className={style.titleTaskItem}>
 						<div className={style.taskTextCount}>
