@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link"
 import dataIcon from "../../../../public/data"
 import style from './left-menu.module.scss'
@@ -5,7 +7,7 @@ import { useState } from "react"
 
 
 const LeftMenu = () => {
-	const [activePage, setActivePage] = useState<string>('/tasks')
+	const [activePage, setActivePage] = useState<string>('/')
 	const handlePageSelect = (link: string) => {
 		setActivePage(link)
 	}

@@ -1,22 +1,18 @@
-import { useContext } from 'react'
+'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ContextModal } from '@/app/layout'
 import style from './modal-task.module.scss'
 
 
 const ModalAddTask = () => {
-	const { openModal, setOpenModal } = useContext(ContextModal)
     return (
 		<>
 		<AnimatePresence>
-		{openModal && (
 			<motion.div 
 				className={style.fullWrapperModal}
 				initial={{opacity: 0}}
 				animate={{opacity: 1}}
 				exit={{opacity: 0}}
-				transition={{duration: 0.3}}
-				onClick={() => setOpenModal(false)}>
+				transition={{duration: 0.3}}>
 			<motion.div 
 				className={style.wrapperModal}
 				initial={{opacity: 0}}
@@ -53,13 +49,11 @@ const ModalAddTask = () => {
                 <div className=''>
                     <button className={style.modalAddBtn}>Добавить покупку</button>
                 </div>
-				<div onClick={() => 
-					setOpenModal(false)} className={style.wrapperKrestModal}>
+				<div className={style.wrapperKrestModal}>
 					<img className={style.krestIcon} src={'assets/img/plus.svg'} alt="" />
 				</div>
 			</motion.div>
 			</motion.div>
-		)}
 		</AnimatePresence>
 		</>
 		)
