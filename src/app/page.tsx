@@ -30,7 +30,7 @@ const WelcomePage = () => {
         animate={{ scale: 1.5 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        Welcome
+        <h3 className={style.title}>You can</h3>
         <motion.div 
           className={style.progressBar}
           initial={{ width: 0 }}
