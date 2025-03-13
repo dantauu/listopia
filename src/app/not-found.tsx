@@ -1,9 +1,9 @@
+
+
 const NotFound = () => {
-    return (
-        <div className="">
-            Это 404
-        </div>
-    )
+   return (
+      <div className="">sosal</div>
+   )
 }
 
 export default NotFound

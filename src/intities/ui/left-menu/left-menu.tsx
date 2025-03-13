@@ -7,7 +7,7 @@ import { useState } from "react"
 
 
 const LeftMenu = () => {
-	const [activePage, setActivePage] = useState<string>('/')
+	const [activePage, setActivePage] = useState<string>('/home/catalog')
 	const handlePageSelect = (link: string) => {
 		setActivePage(link)
 	}
