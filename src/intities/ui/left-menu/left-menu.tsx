@@ -21,10 +21,10 @@ const LeftMenu = () => {
 						key={item.id} 
 						className={`left__menu-item ${activePage === item.link && style.activePage}`}>
 							<img className={`${style.leftMenuIcon} 
-                            ${item.id === 1 && style.set}`} 
-                            src={item.img} 
-                            key={item.id}
-                            alt='' />
+                           ${item.id === 1 && style.set}`} 
+                           src={item.img} 
+                           key={item.id}
+                           alt='' />
 						</Link>
 					))}
 				</div>
