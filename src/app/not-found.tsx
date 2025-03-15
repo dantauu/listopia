@@ -2,7 +2,9 @@
 
 const NotFound = () => {
    return (
-      <div className="">sosal</div>
+      <div className="">
+         Страница не найдена (
+      </div>
    )
 }
 
