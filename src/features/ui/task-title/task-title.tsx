@@ -6,7 +6,7 @@ import CheckSwitch from '@/shared/ui/check-switch/check-switch'
 
 const TaskTitle = () => {
     return (
-			<div className='container'>
+			<div className=''>
 				<CheckSwitch />
 				<div className={style.wrapperTitleTask}>
 					<div className={style.titleTaskItem}>

@@ -1,4 +1,5 @@
 import LeftMenuUi from "@/widgets/left-menu/ui"
+import style from './layout.module.scss'
 
 
 export default function AdminLayout({
@@ -7,9 +8,9 @@ export default function AdminLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<div className=''>
+		<div className={style.wrapper}>
          <LeftMenuUi />
-			<div className=''>
+			<div className={style.content}>
 				{children}
 			</div>
 		</div>
