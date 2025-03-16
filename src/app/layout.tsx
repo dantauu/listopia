@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import '../app/styles/globals.scss'
+import StoreProvider from "@/redux/store-proveder";
 
 
 export const metadata: Metadata = {
@@ -10,7 +11,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode }>) {
   return (
 		<html lang='ru'>
-			<body className=''>{children}</body>
+			<body className=''>
+				<StoreProvider>
+					{children}
+				</StoreProvider>
+			</body>
 		</html>
 	)
 }

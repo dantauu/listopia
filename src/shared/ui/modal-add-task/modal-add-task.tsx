@@ -1,12 +1,14 @@
 'use client'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import style from './modal-task.module.scss'
+import { useDispatch } from 'react-redux'
+import { closeModal } from '@/redux/slices/modal-task-slice'
 
 
 const ModalAddTask = () => {
+	const dispatch = useDispatch()
     return (
 		<>
-		<AnimatePresence>
 			<motion.div 
 				className={style.fullWrapperModal}
 				initial={{opacity: 0}}
@@ -49,12 +51,11 @@ const ModalAddTask = () => {
                 <div className=''>
                     <button className={style.modalAddBtn}>Добавить покупку</button>
                 </div>
-				<div className={style.wrapperKrestModal}>
-					<img className={style.krestIcon} src={'assets/img/plus.svg'} alt="" />
+				<div onClick={() => dispatch(closeModal())} className={style.wrapperKrestModal}>
+					<img className={style.krestIcon} src={'/assets/img/plus.svg'} alt="" />
 				</div>
 			</motion.div>
 			</motion.div>
-		</AnimatePresence>
 		</>
 		)
 }

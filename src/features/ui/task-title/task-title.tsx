@@ -3,8 +3,11 @@ import AddTaskText from '@/shared/ui/add-task-text/add-task-text'
 import style from './task-title.module.scss'
 import Button from '@/shared/ui/button/button'
 import CheckSwitch from '@/shared/ui/check-switch/check-switch'
+import { useDispatch } from 'react-redux'
+import { openModal } from '@/redux/slices/modal-task-slice'
 
 const TaskTitle = () => {
+	const dispatch = useDispatch()
     return (
 			<div className=''>
 				<CheckSwitch />
@@ -28,7 +31,7 @@ const TaskTitle = () => {
 								btnImg='assets/img/plus.svg'
 								btnClass={style.btnTextClass}
 								btnText='Добавить'
-								onClick={() => setOpenModal(true)}
+								onClick={() => dispatch(openModal('task-open-modal'))}
 							/>
 						</div>
 					</div>
@@ -51,7 +54,7 @@ const TaskTitle = () => {
 								btnImg='assets/img/plus.svg'
 								btnClass={style.btnTextClass}
 								btnText='Добавить'
-								onClick={() => setOpenModal(true)}
+								onClick={() => dispatch(openModal('task-open-modal'))}
 							/>
 						</div>
 					</div>
@@ -74,7 +77,7 @@ const TaskTitle = () => {
 								btnImg='assets/img/plus.svg'
 								btnClass={style.btnTextClass}
 								btnText='Добавить'
-								onClick={() => setOpenModal(true)}
+								onClick={() => dispatch(openModal('task-open-modal'))}
 							/>
 						</div>
 					</div>

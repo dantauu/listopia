@@ -19,7 +19,7 @@ const modalTaskSlice = createSlice({
          state.isOpen = true
          state.modalTypes = action.payload
       },
-      closeModal: (state, action) => {
+      closeModal: (state) => {
          state.isOpen = false
          state.modalTypes = null
       }

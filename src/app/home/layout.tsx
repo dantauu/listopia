@@ -1,6 +1,6 @@
 import LeftMenuUi from "@/widgets/left-menu/ui"
 import style from './layout.module.scss'
-import StoreProvider from "@/redux/store-proveder"
+import Modals from "@/features/ui/modals/modals"
 
 
 export default function AdminLayout({
@@ -10,14 +10,13 @@ export default function AdminLayout({
 }) {
 	return (
 		<>
-		<StoreProvider>
 			<div className={style.wrapper}>
          	<LeftMenuUi />
 				<div className={style.content}>
 					{children}
 				</div>
 			</div>
-		</StoreProvider>
+			<Modals />
 		</>
 	)
 }
