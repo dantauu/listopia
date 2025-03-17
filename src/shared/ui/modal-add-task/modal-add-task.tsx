@@ -28,12 +28,12 @@ const ModalAddTask = () => {
 						<input 
 							type='text'
 							className={style.inputItem} 
-							placeholder='Название покупки' />
+							placeholder='Название' />
 					</div>
 					<div className=''>
 						<input 
 							type='text'
-							placeholder='Описание покупки'
+							placeholder='Описание (к примеру дата покупки)'
 							className={style.inputItem} />
 					</div>
 					<div className={style.addBtnImg}>
@@ -44,12 +44,12 @@ const ModalAddTask = () => {
 						</div>
 						<div className="">
 							<img className={style.modalImg} 
-							src={'assets/img/add-image.png'} alt="" />
+							src={'/assets/img/add-image.svg'} alt="" />
 						</div>
 					</div>
 				</div>
                 <div className=''>
-                    <button className={style.modalAddBtn}>Добавить покупку</button>
+                    <button className={style.modalAddBtn}>Добавить</button>
                 </div>
 				<div onClick={() => dispatch(closeModal())} className={style.wrapperKrestModal}>
 					<img className={style.krestIcon} src={'/assets/img/plus.svg'} alt="" />

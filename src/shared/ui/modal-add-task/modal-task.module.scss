@@ -16,8 +16,8 @@
     position: relative;
     width: 600px;
     height: 435px;
-    background: rgb(32 32 32 / 88%);
-    border: 3px solid var(--border-modal-color);
+    background: rgb(0 0 0 / 13%);
+    border: 3px solid var(--violet-light);
     border-radius: 20px;
     z-index: 10;
 }
@@ -31,20 +31,21 @@
 
 .modalButton {
     @include reset-button;
-    color: #fff;
+    color: #000;
     font-family: 'Fira';
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .modalAddBtn {
     @include reset-button;
     color: #fff;
     background: #030307;
-    width: 140px;
-    height: 44px;
+    width: 225px;
+    height: 55px;
     border-radius: 15px;
     font-family: 'Fira';
     margin-top: 33px;
+    font-size: 19px;
 }
 
 .inputItem {
@@ -68,9 +69,9 @@
 .addBtnImg {
     @include flex-center;
     cursor: pointer;
-    background: #000;
-    width: 235px;
-    height: 59px;
+    background: #bbbbbb;
+    width: 214px;
+    height: 49px;
     border-radius: 15px;
     gap: 5px;
 }

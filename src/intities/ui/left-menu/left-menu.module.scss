@@ -15,18 +15,11 @@
 }
 
 .leftMenu {
-    position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 10px 0 13px;
+    justify-content: normal;
+    padding: 22px 10px 0 13px;
     border-top: 2px solid var(--border-color);
     border-right: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
-    // box-shadow: 0 0 28px var(--shadow-color);
     border-radius: 10px;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: max-content;
 }

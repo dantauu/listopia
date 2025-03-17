@@ -17,10 +17,11 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1390px;
-  padding: 120px;
-}
+// .container {
+//   max-width: 1390px;
+//   padding: 120px;
+//   margin: 0 auto;
+// } no correct
 
 .wrapper__flex {
   display: flex;
@@ -62,7 +63,6 @@ a {
 :root {
   --border-color: #e5e5e5;
   --shadow-color: #0000003b;
-  --border-modal-color: #8176ff;
   --violet-light: #8176ff;
 }
 
