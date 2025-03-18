@@ -6,13 +6,13 @@ import { AnimatePresence } from "framer-motion"
 
 
 const Modals = () => {
-   const { isOpen, modalTypes } = useAppSelector((state) => state.modalTask)
+   const { isOpen, currentView } = useAppSelector((state) => state.modalTask)
    return (
       <>
          <AnimatePresence>
-            {isOpen && (
+            {isOpen && currentView && (
                <div className="">
-                  {modalTypes === 'task-open-modal' && <ModalAddTask />}
+                  {<ModalAddTask key={'task-modal'} view={currentView} />}
                </div>
             )}
          </AnimatePresence>

@@ -4,7 +4,7 @@ import { TaskView } from "./task-component-slice"
 
 type modalTaskProps = {
    isOpen: boolean
-   currentView: string | null
+   currentView: TaskView | null
 }
 
 const initialState: modalTaskProps = {

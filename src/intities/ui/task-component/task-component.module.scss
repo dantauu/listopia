@@ -1,0 +1,23 @@
+.taskCard {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.taskTitle {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.taskImage {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 4px;
+}

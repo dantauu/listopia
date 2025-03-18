@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import { openModal } from '@/redux/slices/modal-task-slice'
 import { useAppSelector } from '@/redux/hooks'
 import { TaskView } from '@/redux/slices/task-component-slice'
+import TaskColumn from '../task-column/task-column'
 
 const columns: {
     view: TaskView;
@@ -32,40 +33,27 @@ const columns: {
 
 const TaskTitle = () => {
     const dispatch = useDispatch()
-    const tasks = useAppSelector((state) => state.taskComponentSlice.tasks)
 
     return (
         <div className=''>
             <CheckSwitch />
             <div className={style.wrapperTitleTask}>
-                {columns.map((column) => {
-                    const filteredTasks = tasks.filter(t => t.view === column.view)
-                    return (
-                        <div key={column.view} className={style.titleTaskItem}>
-                            <div className={style.taskTextCount}>
-                                <AddTaskText
-                                    addTaskColor={column.style}
-                                    addTaskText={column.title}
-                                    addTaskTextClass={style.colorTaskText}
-                                    addTaskWrapper={style.titleTaskWrapper}
-                                />
-                                <div className={style.titleTaskCount}>
-                                    <p className={style.count}>{filteredTasks.length}</p>
-                                </div>
-                            </div>
-                            <div>
-                                <Button
-                                    wrapperBtn={style.wrapperBtnClass}
-                                    imgClass={style.btnImgClass}
-                                    btnImg='assets/img/plus.svg'
-                                    btnClass={style.btnTextClass}
-                                    btnText='Добавить'
-                                    onClick={() => dispatch(openModal(column.view))}
-                                />
-                            </div>
-                        </div>
-                    )
-                })}
+                {columns.map((column, index) => (
+						<div key={index} className="">
+                    <TaskColumn 
+                        key={column.view}
+                        view={column.view}
+                        title={column.title}
+                    />
+						  	<Button
+                        wrapperBtn={style.wrapperBtnClass}
+                        imgClass={style.btnImgClass}
+                        btnImg='assets/img/plus.svg'
+                        btnClass={style.btnTextClass}
+                        btnText='Добавить'
+                        onClick={() => dispatch(openModal(column.view))}/>
+						  </div>
+                ))}
             </div>
         </div>
     )
