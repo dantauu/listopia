@@ -4,12 +4,12 @@ import { TaskView } from "./task-component-slice"
 
 type modalTaskProps = {
    isOpen: boolean
-   modalTypes: string | null
+   currentView: string | null
 }
 
 const initialState: modalTaskProps = {
    isOpen: false,
-   modalTypes: null
+   currentView: null
 }
 
 const modalTaskSlice = createSlice({
@@ -18,11 +18,11 @@ const modalTaskSlice = createSlice({
    reducers: {
       openModal: (state, action: PayloadAction<TaskView>) => {
          state.isOpen = true
-         state.modalTypes = action.payload
+         state.currentView = action.payload
       },
       closeModal: (state) => {
          state.isOpen = false
-         state.modalTypes = null
+         state.currentView = null
       }
    }
 })

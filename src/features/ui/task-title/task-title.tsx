@@ -5,6 +5,8 @@ import Button from '@/shared/ui/button/button'
 import CheckSwitch from '@/shared/ui/check-switch/check-switch'
 import { useDispatch } from 'react-redux'
 import { openModal } from '@/redux/slices/modal-task-slice'
+import { useAppSelector } from '@/redux/hooks'
+import { TaskView } from '@/redux/slices/task-component-slice'
 
 const TaskTitle = () => {
 	const dispatch = useDispatch()

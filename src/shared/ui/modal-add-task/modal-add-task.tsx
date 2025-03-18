@@ -3,10 +3,16 @@ import { motion } from 'framer-motion'
 import style from './modal-task.module.scss'
 import { useDispatch } from 'react-redux'
 import { closeModal } from '@/redux/slices/modal-task-slice'
+import { useAppSelector } from '@/redux/hooks'
+import { useState } from 'react'
 
 
 const ModalAddTask = () => {
 	const dispatch = useDispatch()
+	const currentView = useAppSelector((state) => state.modalTask.currentView)
+	const [title, setTitle] = useState('')
+	const [description, setDescription] = useState('')
+	const [img, setImg] = useState<string | undefined>(undefined)
     return (
 		<>
 			<motion.div 
