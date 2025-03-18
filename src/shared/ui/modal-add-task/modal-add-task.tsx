@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 import { closeModal } from '@/redux/slices/modal-task-slice'
 import { useAppSelector } from '@/redux/hooks'
 import { useState } from 'react'
+import { addTask } from '@/redux/slices/task-component-slice'
 
 
 const ModalAddTask = () => {
@@ -13,6 +14,20 @@ const ModalAddTask = () => {
 	const [title, setTitle] = useState('')
 	const [description, setDescription] = useState('')
 	const [img, setImg] = useState<string | undefined>(undefined)
+	const handleAdd = () => {
+		if (currentView && title.trim()) {
+			dispatch(addTask({
+				title: title.trim(),
+				description: description.trim(),
+				image: img || undefined,
+				view: currentView
+			}))
+			dispatch(closeModal())
+			setTitle('')
+			setDescription('')
+			setImg('')
+		}
+	}
     return (
 		<>
 			<motion.div 
@@ -34,12 +49,14 @@ const ModalAddTask = () => {
 						<input 
 							type='text'
 							className={style.inputItem} 
+							onChange={(e) => setTitle(e.target.value)}
 							placeholder='Название' />
 					</div>
 					<div className=''>
 						<input 
 							type='text'
 							placeholder='Описание (к примеру дата покупки)'
+							onChange={(e) => setDescription(e.target.value)}
 							className={style.inputItem} />
 					</div>
 					<div className={style.addBtnImg}>
@@ -55,7 +72,10 @@ const ModalAddTask = () => {
 					</div>
 				</div>
                 <div className=''>
-                    <button className={style.modalAddBtn}>Добавить</button>
+                    <button 
+						  	onClick={handleAdd}
+							disabled={!title.trim()}
+						   className={style.modalAddBtn}>Добавить</button>
                 </div>
 				<div onClick={() => dispatch(closeModal())} className={style.wrapperKrestModal}>
 					<img className={style.krestIcon} src={'/assets/img/plus.svg'} alt="" />
