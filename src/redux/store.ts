@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import modalTask from './slices/modal-task-slice'
+import taskComponentSlice from './slices/task-component-slice'
 
 const reducers = combineReducers({
-   modalTask
+   modalTask,
+   taskComponentSlice
 })
 
 export const store = configureStore({

@@ -1,9 +1,9 @@
-import TaskTitle from "@/features/ui/task-title/task-title"
+import TaskTitleUi from "@/widgets/task-title/ui"
 
 
 const CatalogPage = () => {
    return (
-      <TaskTitle />
+      <TaskTitleUi />
    )
 }
 

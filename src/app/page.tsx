@@ -1,8 +1,8 @@
-import WelcomeLoader from "@/features/ui/welcome-loader/welcome-loader"
+import WelcomeLoaderUi from "@/widgets/welcome-loader/ui"
 
 const WelcomePage = () => {
    return (
-       <WelcomeLoader />
+       <WelcomeLoaderUi />
    )
 }
 

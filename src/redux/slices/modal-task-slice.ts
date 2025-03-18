@@ -1,4 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { TaskView } from "./task-component-slice"
 
 
 type modalTaskProps = {
@@ -15,7 +16,7 @@ const modalTaskSlice = createSlice({
    name: 'modalTask',
    initialState,
    reducers: {
-      openModal: (state, action) => {
+      openModal: (state, action: PayloadAction<TaskView>) => {
          state.isOpen = true
          state.modalTypes = action.payload
       },
