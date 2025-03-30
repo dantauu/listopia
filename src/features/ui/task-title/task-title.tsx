@@ -39,7 +39,7 @@ const TaskTitle = () => {
             <CheckSwitch />
             <div className={style.wrapperTitleTask}>
                 {columns.map((column, index) => (
-						<div key={index} className="">
+						<div key={index} className={style.mainWrapper}>
                     <TaskColumn 
                         key={column.view}
                         view={column.view}

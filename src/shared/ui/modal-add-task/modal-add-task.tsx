@@ -65,6 +65,7 @@ const ModalAddTask = ({ view }: { view: TaskView }) => {
                         placeholder="Описание"
                         className={style.inputItem}
                     />
+                    {img ? null : (
                     <div className={style.addBtnImg}>
                         <input
                             type="file"
@@ -73,9 +74,13 @@ const ModalAddTask = ({ view }: { view: TaskView }) => {
                             id="imageUpload"
                             hidden
                         />
+                        
                         <label htmlFor="imageUpload" className={style.modalButton}>
                             Добавить изображение
                         </label>
+                    </div>
+                    )}
+                    <div className={style.imgWrapper}>
                         {img && <img src={img} className={style.previewImage} alt="Preview" />}
                     </div>
                 </div>
