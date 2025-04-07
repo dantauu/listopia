@@ -1,8 +1,7 @@
 const NotFound = () => {
 	return (
 		<div className=''>
-			Упс <br />
-			Что то полшло не так (
+			Упс <br /> страница не найдена (
 		</div>
 	)
 }
