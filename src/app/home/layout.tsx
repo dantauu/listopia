@@ -1,7 +1,6 @@
-import LeftMenuUi from "@/widgets/left-menu/ui"
+import LeftMenuUi from '@/widgets/left-menu/ui'
 import style from './layout.module.scss'
-import Modals from "@/features/ui/modals/modals"
-
+import Modals from '@/features/ui/modals/modals'
 
 export default function AdminLayout({
 	children,
@@ -11,10 +10,8 @@ export default function AdminLayout({
 	return (
 		<>
 			<div className={style.wrapper}>
-         	<LeftMenuUi />
-				<div className={style.content}>
-					{children}
-				</div>
+				<LeftMenuUi />
+				<div className={style.content}>{children}</div>
 			</div>
 			<Modals />
 		</>
