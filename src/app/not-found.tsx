@@ -1,9 +1,7 @@
-const NotFound = () => {
-	return (
-		<div className=''>
-			Упс <br /> страница не найдена (
-		</div>
-	)
+import NotFound from "@/widgets/not-found/ui"
+
+const NotFoundPage = () => {
+  return <NotFound />
 }
 
-export default NotFound
+export default NotFoundPage
