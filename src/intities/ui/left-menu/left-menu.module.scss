@@ -1,25 +1,25 @@
 // @import '../../../app/styles/globals.scss';
 
 .wrapperLeftMenu {
-    display: flex;
-    gap: 50px;  
-    flex-direction: column;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
 }
 
 .leftMenuIcon {
-    width: 40px;
+  width: 40px;
 }
 
 .set {
-    width: 45px;
+  width: 45px;
 }
 
 .leftMenu {
-    display: flex;
-    justify-content: normal;
-    padding: 22px 10px 0 13px;
-    border-top: 2px solid var(--border-color);
-    border-right: 2px solid var(--border-color);
-    border-bottom: 2px solid var(--border-color);
-    border-radius: 10px;
+  display: flex;
+  justify-content: normal;
+  padding: 22px 10px 0 13px;
+  border-top: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  border-radius: 10px;
 }

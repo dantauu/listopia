@@ -1,14 +1,14 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import modalTask from './slices/modal-task-slice'
-import taskComponentSlice from './slices/task-component-slice'
+import { combineReducers, configureStore } from "@reduxjs/toolkit"
+import modalTask from "./slices/modal-task-slice"
+import taskComponentSlice from "./slices/task-component-slice"
 
 const reducers = combineReducers({
-	modalTask,
-	taskComponentSlice,
+  modalTask,
+  taskComponentSlice,
 })
 
 export const store = configureStore({
-	reducer: reducers,
+  reducer: reducers,
 })
 
 export type RootState = ReturnType<typeof store.getState>

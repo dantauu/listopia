@@ -1,91 +1,91 @@
-@import '../../../app//styles/variables.scss';
+@import "../../../app//styles/variables.scss";
 
 .mainWrapper {
-    height: 30px;
+  height: 30px;
 }
 
 .colorTaskRed {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background: rgba(255, 0, 0, 0.741);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(255, 0, 0, 0.741);
 }
 
 .colorTaskGreen {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background: rgba(1, 180, 1, 0.741);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(1, 180, 1, 0.741);
 }
 
 .colorTaskBlue {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background: rgba(1, 111, 207, 0.741);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(1, 111, 207, 0.741);
 }
 
 .wrapperTitleTask {
-    display: flex;
-    align-items: center;
-    gap: 140px;
+  display: flex;
+  align-items: center;
+  gap: 140px;
 }
 
 .titleTaskWrapper {
-    @include flex-center;
-    gap: 7px;
+  @include flex-center;
+  gap: 7px;
 }
 
 .titleTaskItem {
-    @include flex-column;
-    gap: 40px;
+  @include flex-column;
+  gap: 40px;
 }
 
 .taskTextCount {
-    display: flex;
-    gap: 40px
+  display: flex;
+  gap: 40px;
 }
 
 .titleTaskCount {
-    @include flex-center;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px var(--shadow-color);
+  @include flex-center;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--shadow-color);
 }
 
 .colorTaskText {
-    font-family: 'Montserrat-M';
-    width: 154px;
+  font-family: "Montserrat-M";
+  width: 154px;
 }
 
 //Button
 
 .wrapperBtnClass {
-    @include flex-center;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    width: 235px;
-    height: 45px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+  @include flex-center;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 235px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .wrapperBtnClass:hover {
-    background: #bac9fb;
+  background: #bac9fb;
 }
 
 .btnTextClass {
-    @include reset-button;
-    font-family: 'Fira';
-    font-size: 16px;
+  @include reset-button;
+  font-family: "Fira";
+  font-size: 16px;
 }
 
 .btnImgClass {
-    width: 38px;
-    padding-top: 5px;
+  width: 38px;
+  padding-top: 5px;
 }
 
 .count {
-    font-family: 'Fira';
+  font-family: "Fira";
 }

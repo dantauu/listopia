@@ -1,9 +1,7 @@
 import WelcomeLoaderUi from "@/widgets/welcome-loader/ui"
 
 const WelcomePage = () => {
-   return (
-       <WelcomeLoaderUi />
-   )
+  return <WelcomeLoaderUi />
 }
 
 export default WelcomePage

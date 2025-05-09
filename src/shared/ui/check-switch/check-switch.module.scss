@@ -48,7 +48,9 @@
 
 .toggleSwitch input[type="checkbox"]:checked + .toggleSwitchHandle {
   transform: translateX(45px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #98b0ff;
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.2),
+    0 0 0 3px #98b0ff;
 }
 
 .toggleSwitch input[type="checkbox"]:checked + .toggleSwitchBackground {
@@ -62,6 +64,9 @@
   right: -15px;
 }
 
-.toggleSwitch input[type="checkbox"]:checked + .toggleSwitchBackground .toggleSwitchHandle {
+.toggleSwitch
+  input[type="checkbox"]:checked
+  + .toggleSwitchBackground
+  .toggleSwitchHandle {
   transform: translateX(40px);
 }
